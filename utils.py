@@ -32,7 +32,7 @@ def get_user_app_token(tenant_id, client_id, client_secret, username, password):
 
     element_id = webdriver.common.by.By.ID
     email_locator = (element_id, "i0116")
-    driver.find_element(*email_locator).send_keys(username+"@crowley.com")
+    driver.find_element(*email_locator).send_keys(username+"@organization.com")
 
     next_button_locator = (element_id, "idSIButton9")
     driver.find_element(*next_button_locator).click()
